@@ -42,10 +42,10 @@ class Student {
     function toString()
     {
         $result = $this->first_name . ' ' . $this->surname;
-        $result .= " (" . $this->average() . ")\n";
+        $result .= " (" . $this->average() . ")" . PHP_EOL;
         foreach ($this->emails as $which => $what)
-            $result .= $which . ': ' . $what . '\n';
-        $result .= '\n';
+            $result .= $which . ': ' . $what . PHP_EOL;
+        $result .= PHP_EOL;
         return '<pre>' . $result . '</pre>';
     }
 }
